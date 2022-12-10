@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Homescreen = () => {
   const [dropData, setDropdata] = useState(null);
@@ -15,6 +15,7 @@ const Homescreen = () => {
   // URL
   const getWeather = () => {
     const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=c2d04a04a63f029b9404b7a3b2f945af`;
+    
     fetch(url, {
       method: "Get",
     })
@@ -35,7 +36,7 @@ const Homescreen = () => {
   };
   console.log(city.length);
   // if no city entered
-  city.length === 0 &&
+  city.length == 0 &&
     !coords.lat &&
     navigator.geolocation.getCurrentPosition((position) => {
       console.log("here");

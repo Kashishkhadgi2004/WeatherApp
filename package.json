@@ -1,8 +1,8 @@
 {
-  "name": "index.js",
+  "name": "WeatherApp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ayushkhadgi.github.io/Weather-App-Mini-Project-2/",
+  "homepage": "https://ayushkhadgi.github.io/WeatherApp/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -40,5 +40,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
