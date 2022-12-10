@@ -124,7 +124,7 @@ const Homescreen = () => {
           <h1>{`${weather.temp ? weather.temp : "23"}°C`}</h1>
           <div className="weather-desc">
             <img
-              src={`https://openweathermap.org/img/wn/${weather.url ? weather.url :"01d"}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weather.url ? weather.url :"Weather"}@2x.png`}
               alt="weather"
             />
             <span>{weather.info ? weather.info :" Thundering"}</span>
