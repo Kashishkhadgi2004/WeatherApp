@@ -15,7 +15,7 @@ const Homescreen = () => {
   // URL
   const getWeather = () => {
     const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=c2d04a04a63f029b9404b7a3b2f945af`;
-    
+
     fetch(url, {
       method: "Get",
     })
@@ -52,7 +52,7 @@ const Homescreen = () => {
     console.log(e.target.value);
     setCity(e.target.value);
     if (e.target.value.length > 2) {
-      const url = `https://api.geoapify.com/v1/geocode/autocomplete?text=${e.target.value}&apiKey=9c56f29c54234633b30fb40676acb672`;
+      const url = `https://api.geoapify.com/v1/geocode/autocomplete?text=${e.target.value}&apiKey=c2d04a04a63f029b9404b7a3b2f945af`;
       fetch(url, { method: "Get" })
         .then((res) => {
           return res.json();
