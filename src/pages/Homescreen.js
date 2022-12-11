@@ -14,7 +14,7 @@ const Homescreen = () => {
 
   // URL
   const getWeather = () => {
-    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?id=524901&lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=7e4d91d900116b12a167ca50980fd109`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
 
     fetch(url, {
       method: "Get",
