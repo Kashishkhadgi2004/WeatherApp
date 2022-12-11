@@ -14,7 +14,7 @@ const Homescreen = () => {
 
   // URL
   const getWeather = () => {
-    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=c2d04a04a63f029b9404b7a3b2f945af`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?id=524901&lat=${coords.lat}&lon=${coords.long}&mode=json&units=metric&cnt=5&appid=7e4d91d900116b12a167ca50980fd109`;
 
     fetch(url, {
       method: "Get",
@@ -124,7 +124,7 @@ const Homescreen = () => {
           <h1>{`${weather.temp ? weather.temp : "23"}°C`}</h1>
           <div className="weather-desc">
             <img
-              src={`https://openweathermap.org/img/wn/${weather.url ? weather.url :"Weather"}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weather.url ? weather.url :"01d"}@2x.png`}
               alt="weather"
             />
             <span>{weather.info ? weather.info :" Thundering"}</span>
